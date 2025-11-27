@@ -5,7 +5,7 @@ def convert_volume(value, from_unit, to_unit):
     to_unit = to_unit.strip()
 
     if from_unit not in conversion or to_unit not in conversion:
-        raise ValueError("Помилка: використовуйте тільки м3, дм3, см3 або мм3")
+        raise ValueError("Помилка: використовуйте тільки m3, dm3, cm3 або mm3")
 
     value_in_m3=value*conversion[from_unit]
     result=value_in_m3/conversion[to_unit]
